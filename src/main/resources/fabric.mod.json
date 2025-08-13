@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-furniture",
+	"version": "${version}",
+	"name": "Better furniture",
+	"description": "一个非常好的家具模组，仍在更新",
+	"authors": [
+		"PuTong"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-furniture/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"putong.better.furniture.BetterFurniture"
+		],
+		"fabric-datagen": [
+			"putong.better.furniture.BetterFurnitureDataGenerator"
+		],
+        "client": [
+          "putong.better.furniture.BetterFurnitureClinent"
+        ]
+	},
+	"mixins": [
+		"better-furniture.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
