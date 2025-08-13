@@ -1,5 +1,13 @@
 # gradle
 
+# 忽略所有 Gradle 压缩包
+*.zip
+
+# 忽略 Gradle 包装器文件
+gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+
 .gradle/
 build/
 out/
@@ -38,3 +46,4 @@ hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
+
